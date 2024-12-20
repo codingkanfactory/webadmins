@@ -1,0 +1,81 @@
+:root {
+  --primary-color: #A8D5BA; /* Pastel Green */
+  --secondary-color: #D1E8E2; /* Light Pastel Green */
+  --background-color: #F3F9F4; /* Very Light Green */
+  --surface-color: #ffffff; /* White */
+  --on-primary-color: #2D4A40; /* Dark Green for text on primary */
+  --on-secondary-color: #2D4A40; /* Dark Green for text on secondary */
+  --on-surface-color: #333333; /* Darker text for general surfaces */
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: var(--primary-color);
+  color: var(--on-primary-color);
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.token-card {
+  background-color: var(--secondary-color);
+  color: var(--on-secondary-color);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-body {
+  font-size: 1.2rem;
+}
+
+.icon-btn {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon-btn.clicked {
+  color: #2D4A40; /* Dark Green when clicked */
+}
+
+.download-btn {
+  background-color: var(--primary-color);
+  color: var(--on-primary-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #88B69B; /* Slightly darker pastel green */
+}
+
+.card-wrapper {
+  margin-top: 30px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.material-icons {
+  font-size: 1.5rem;
+}
